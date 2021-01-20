@@ -37,7 +37,6 @@ const questionPrompts = () => {
             name: "test"
         },
         {
-            // add checkbox for licenses
             type: "checkbox",
             message: "What licenses are you using?",
             name: "licenses",
@@ -83,7 +82,7 @@ ${answers.contribution}
 ${answers.test}
 
 ## Licenses
-${answers.licenses}
+https://img.shields.io/badge/license-${answers.licenses}-blue.svg
 
 ## Contact Me
 https://github.com/${answers.github}
