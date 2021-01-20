@@ -82,7 +82,7 @@ ${answers.contribution}
 ${answers.test}
 
 ## Licenses
-https://img.shields.io/badge/license-${answers.licenses}-blue.svg
+![${answers.licenses}]https://img.shields.io/badge/license-${answers.licenses}-blue.svg
 
 ## Contact Me
 https://github.com/${answers.github}
