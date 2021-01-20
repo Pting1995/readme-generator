@@ -4,13 +4,8 @@ const util = require('util');
 
 const writeFileAsync = util.promisify(fs.writeFile);
 
-// TODO: Create an array of questions for user input
-const questions = [
-
-    "What is your email address"];
-
 const questionPrompts = () => {
-    inquirer.prompt([
+    return inquirer.prompt([
         {
             type: "input",
             message: "What is your readme title?",
@@ -59,8 +54,8 @@ const questionPrompts = () => {
     ]);
 };
 
-const generateReadMe = (answers) =>
-`
+function generateReadMe(answers) {
+const readMeText = `
 # ${answers.title}
 
 ## Description
@@ -85,5 +80,20 @@ ${answers.licenses}
 ${answers.github}
 ${answers.email}
 `
+    return readMeText;
+}
 
-initialize();
+async function init() {
+    try {
+        var answers = {};
+        answers = await questionPrompts();
+        const md = generateReadMe(answers)
+        await writeFileAsync("readme-gen.md", md)
+        console.log("Readme created!");
+    }
+    catch (err) {
+        console.log(err)
+    }
+}
+
+init();
