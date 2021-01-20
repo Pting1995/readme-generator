@@ -1,4 +1,4 @@
-# project
+# Project
 
 ## Table of Contents
 [Description](#Description)  
@@ -10,7 +10,7 @@
 [Contact Me](#Contact-Me)  
 
 ## Description
-project description
+project desc
 
 ## Installation Instructions
 npm install
