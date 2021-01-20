@@ -38,7 +38,9 @@ async function init() {
 - [Link to LinkedIn](https://www.linkedin.com/in/pting002/)
 - [Link to Portfolio](https://pting1995.github.io/Portfolio-mk2/)
 
-## License(https://img.shields.io/badge/license-MIT-blue.svg)
+## License
+
+https://img.shields.io/badge/license-MIT-blue.svg
 
 This project is licensed under the MIT License 
 
