@@ -37,9 +37,11 @@ const questionPrompts = () => {
             name: "test"
         },
         {
-            type: "input",
+            // add checkbox for licenses
+            type: "checkbox",
             message: "What licenses are you using?",
-            name: "licenses"
+            name: "licenses",
+            choices: ["MIT", "Apache", "GNU"]
         },
         {
             type: "input",
@@ -53,10 +55,17 @@ const questionPrompts = () => {
         }
     ]);
 };
-
 function generateReadMe(answers) {
-const readMeText = `
-# ${answers.title}
+const readMeText = `# ${answers.title}
+
+## Table of Contents
+[Description](#Description)  
+[Installation Instructions](#Installation-Instructions)  
+[Usage Information](#Usage-Information)  
+[Contributions](#Contributions)  
+[Test Instructions](#Test-Instructions)  
+[Licenses](#Licenses)  
+[Contact Me](#Contact-Me)  
 
 ## Description
 ${answers.desc}
@@ -77,8 +86,9 @@ ${answers.test}
 ${answers.licenses}
 
 ## Contact Me
-${answers.github}
+https://github.com/${answers.github}
 ${answers.email}
+If you have any question please contact me!
 `
     return readMeText;
 }
