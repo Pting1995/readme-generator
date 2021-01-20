@@ -1,6 +1,7 @@
 # Readme Generator
 
-![Working App](https://drive.google.com/file/d/1uTw09xwSEZb247AyVe7Z1dE627DD_Zi2/view)
+![App Demo]
+https://drive.google.com/file/d/1uTw09xwSEZb247AyVe7Z1dE627DD_Zi2/view
 
 This site was made to generate readmes! You have to do an npm install before running the node index.js command because it relies on inquirer. When the application runs it will ask you a series of questions. After all the questions have been answered, the answers will be put inside a readme skeleton with a clickable table of contents that direct you to the related area.
 
@@ -37,7 +38,7 @@ async function init() {
 - [Link to LinkedIn](https://www.linkedin.com/in/pting002/)
 - [Link to Portfolio](https://pting1995.github.io/Portfolio-mk2/)
 
-## License https://img.shields.io/badge/license-MIT-blue.svg
+## License(https://img.shields.io/badge/license-MIT-blue.svg)
 
 This project is licensed under the MIT License 
 
