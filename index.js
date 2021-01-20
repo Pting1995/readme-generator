@@ -5,14 +5,11 @@ const util = require('util');
 // const writeFileAsync = util.promisify(fs.writeFile);
 
 // TODO: Create an array of questions for user input
-const questions = [ 
-"What are the contribution guidelines?",
-"What are the test instructions?",
-"What licenses?",
-"What is your GitHub username?",
-"What is your email address"];
+const questions = [
 
-const questionPrompts = () =>
+    "What is your email address"];
+
+const questionPrompts = () => {
     inquirer.prompt([
         {
             type: "input",
@@ -33,6 +30,36 @@ const questionPrompts = () =>
             type: "input",
             message: "What is the usage information?",
             name: "use"
+        },
+        {
+            type: "input",
+            message: "What are the contribution guidelines?",
+            name: "contribution"
+        },
+        {
+            type: "input",
+            message: "What are the test instructions?",
+            name: "test"
+        },
+        {
+            type: "input",
+            message: "What licenses are you using?",
+            name: "licenses"
+        },
+        {
+            type: "input",
+            message: "What is your GitHub username?",
+            name: "github"
+        },
+        {
+            type: "input",
+            message: "What is your email address?",
+            name: "email"
         }
+    ]);
+};
 
-    ])
+const generateReadMe = (answers) =>
+
+
+questionPrompts()
