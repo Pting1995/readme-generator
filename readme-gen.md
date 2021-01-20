@@ -25,7 +25,7 @@ Peter Ting
 none
 
 ## Licenses
-![MIT]https://img.shields.io/badge/license-MIT-blue.svg
+![MIT](https://img.shields.io/badge/license-MIT-blue.svg)
 
 ## Contact Me
 https://github.com/pting1995
