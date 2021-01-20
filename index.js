@@ -2,7 +2,7 @@ const fs = require('fs');
 const inquirer = require('inquirer');
 const util = require('util');
 
-// const writeFileAsync = util.promisify(fs.writeFile);
+const writeFileAsync = util.promisify(fs.writeFile);
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -60,6 +60,30 @@ const questionPrompts = () => {
 };
 
 const generateReadMe = (answers) =>
+`
+# ${answers.title}
 
+## Description
+${answers.desc}
 
-questionPrompts()
+## Installation Instructions
+${answers.install}
+
+## Usage Information
+${answers.use}
+
+## Contributions
+${answers.contribution}
+
+## Test Instructions
+${answers.test}
+
+## Licenses
+${answers.licenses}
+
+## Contact Me
+${answers.github}
+${answers.email}
+`
+
+initialize();
