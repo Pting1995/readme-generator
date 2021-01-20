@@ -40,7 +40,7 @@ async function init() {
 
 ## License
 
-(https://img.shields.io/badge/license-MIT-blue.svg)
+![MIT](https://img.shields.io/badge/license-MIT-blue.svg)
 
 This project is licensed under the MIT License 
 
