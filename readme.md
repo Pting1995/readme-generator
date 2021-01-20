@@ -29,6 +29,8 @@ async function init() {
 * [GitHub](https://github.com/)
 * [Git](https://git-scm.com/)
 * [JS](https://www.javascript.com/)
+* [Inquirer package](https://www.npmjs.com/package/inquirer).
+
 
 ## Authors
 
